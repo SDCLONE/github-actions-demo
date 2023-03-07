@@ -15,4 +15,7 @@ jobs:
       - name: Cat text
         run: |
           cat text.txt
+
+      - name: Connect Baidu
+        run: curl 'http://www.baidu.com'
   
