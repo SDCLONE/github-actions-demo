@@ -3,6 +3,9 @@ on:
   push:
     branches:
       - master
+  # 当有分支合并到master时，会触发actions
+  pull-request:
+    branches: [master]
 jobs:
   hello-actions:
     runs-on: ubuntu-18.04
