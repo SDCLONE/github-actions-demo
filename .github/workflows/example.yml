@@ -6,6 +6,8 @@ on:
   # 当有分支合并到master时，会触发actions
   pull_request:
     branches: [master]
+# 指定github actions有读写所有rest api的权限
+permissions: read-all|write-all
 jobs:
   hello-actions:
     runs-on: ubuntu-18.04
